@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+    <title>Document</title>
+</head>
+<body>
+    <!--Formulario, donde El atributo action define la ubicación (URL) donde
+     se envían los datos que el formulario ha recopilado cuando se validan.El 
+     atributo method define con qué método HTTP se envían los datos (generalmente 
+     get o post).-->
+     <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+
+          <li>
+            <label for="first-name">Apellido Paterno:</label>
+            <input type="text" id="first-name name" name="user_first_name" />
+          </li>
+
+          <li>
+            <label for="last-name">Apellido Materno:</label>
+            <input type="text" id="last-name" name="user_last_name" />
+          </li>
+
+          <li>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail" />
+          </li>
+
+          <li>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message">Por defecto, este elemento contiene este texto</textarea>
+          </li>
+          <li>
+            <label for="msg">Comentario:</label>
+            <input type="text" id="commet" value="por defecto este elemento se llena con este texto" />
+          </li>
+
+          <li class="button">
+            <button type="submit">Envíe su mensaje</button>
+          </li>
+        </ul>
+      </form>
+      
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* P viene a ser el selector en este caso es la etiqueta de parrafo. Dento de los corchetes 
+encontramos la propiedad(color) y su valor(red), ese conjunto se le conoce como declaración. 
+A la estructura completa se le cono regla predeterminada o solo regla.
+ #################################################
+    Selector {
+              Propiedad: Valor de la propiedad;
+              |-------DECLARACIÓN--------------|
+    }    
+    |------------REGLA PREDETERMINADA-------------|       
+ */
+p {
+  color: red; /*Propiedad de Color*/
+  width: 500px; /*Propiedad de Ancho/Amplitud*/
+  border: 1px solid black; /*Propiedad de Borde*/
+}
+
+/*Se Puede seleccionar varios elementos*/
+li,
+h1 {
+  color: #00539f;
+ }
+ /*¿Que es un Selector?
+ Un selector CSS es la primera parte de una regla CSS. Es un patrón de elementos 
+ y otros términos que indican al navegador qué elementos HTML se seleccionan para 
+ aplicarles una regla que incluye los valores de las propiedades CSS. El elemento 
+ o los elementos seleccionados por el selector se denominan sujeto del selector 
+
+ Hay diferentes tipos de Selectores::
+    + Selector de Elemento: Todo los elementos HTML del tipo especificado
+
+    + Selector de Identificación: El elemento de la pagina con el ID 
+                                  especificado(en una pagina HTML dada, 
+                                  solo se permite un único elemento por ID).
+
+    + Selector de Clase: Los elementos en la pagina con la clase especificada(una
+                         clase puede aparecer varias veces en una pagina).
+
+    + Selector de Atributos: Los elementos en una página con el atributo 
+                              especificado.
+    
+    + Selector de Pseudoclase: Los elementos especificados, pero solo cuando 
+                                este en el estado especificado, por ejemplo 
+                                cuando el puntero esté sobre él.
+    + Selector Unversal: El selector universal CSS ( *) coincide con elementos 
+                          de cualquier tipo.
+
+    + Selector de Pseudoelemnto::
+
+    + Selector de Operadores de combinación descendentes: 
+
+    + Selector de Operador de combinación de elementos hijo:
+    
+    + Selecetor de Operador decombinación de elementos hermanos adyacentes: 
+
+    + Selector de Operador de combinación general de elementos hermanos: 
+
+ */
+h1{
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  text-shadow: 3px 3px 1px black;
+}
+
+p,
+li{
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+html {
+  font-size: 10px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
+  font-family:
+    "Open Sans", sans-serif; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
+  background-color: rgb(250, 33, 33);
+}
+
+body{
+  width: 600px; /* esto hará que el cuerpo siempre tenga 600 píxeles de ancho. */
+  margin: 0 auto; /* cuando seleccionas dos valores dentro de propiedades como margin o padding, 
+                  el primer valor afectará los lados superior (top) e inferior (bottom) (en este 
+                  caso haciéndolo en 0), y el segundo valor los lados izquierdo (left) y derecho 
+                  (right) (aquí, auto es un valor especial que divide el espacio disponible entre 
+                  derecha e izquierda).*/
+  background-color: #ff9100; /*como antes, este selecciona el color de fondo de un elemento. Se 
+                                ha usado un naranja rojizo para el elemento body en contraste con 
+                                el azul oscuro del elemento <html>.*/
+  padding: 0 20px 20px 20px;
+  border: 7px solid black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+  

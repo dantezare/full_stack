@@ -1,0 +1,70 @@
+    
+    
+    <!-- el tipo de documento. Es un preámbulo requerido. Anteriormente, cuando HTML era 
+    joven (cerca de 1991/2), los tipos de documento actuaban como vínculos a un conjunto 
+    de reglas que el código HTML de la página debía seguir para ser considerado bueno, lo 
+    que podía significar la verificación automática de errores y algunas otras cosas de utilidad-->
+    <!DOCTYPE html>
+
+    <!--el elemento <html>. Este elemento encierra todo el contenido de la página
+    entera y, a veces, se le conoce como el elemento raíz (root element).-->
+    <html lang="es">
+     
+    <!--el elemento <head>. Este elemento actúa como un contenedor de todo aquello que quieres 
+    incluir en la página HTML que no es contenido visible por los visitantes de la página. Incluye 
+    cosas como palabras clave (keywords), una descripción de la página que quieres que aparezca en 
+    resultados de búsquedas, código CSS para dar estilo al contenido, declaraciones del juego de 
+    caracteres, etc.-->
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Este elemento establece el juego de caracteres quetu documento usará en
+        utf-8, que incluye casi todos los caracteres de todos los idiomas humanos.-->
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--el elemento <title> establece el título de tu página, que es el título que aparece en 
+        la pestaña o en la barra de título del navegador cuando la página es cargada, y se usa para 
+        describir la página cuando es añadida a los marcadores o como favorita.-->
+        <title>Mi Pagina de Prueba</title>
+
+        <!--Aplicando el CSS (style.css) al Html-->
+        <link href="style.css" rel="stylesheet" type="text/css" /> 
+
+    </head>
+
+    <!--el elemento <body>. Encierra todo el contenido que deseas mostrar a los usuarios web que 
+    visiten tu página, ya sea texto, imágenes, videos, juegos, pistas de audio reproducibles, y 
+    demás.-->
+    <body>
+        
+        <!--Encabezado o Titulo-->
+        <h1>Los gatos</h1>
+
+        <!--Subencabezado - o Subtitulo-->
+        <h2>Tipo de gatos</h2>
+            <p class="editor-note">Mi gato es muy gruñon.</p> <!--elemento de parrafo con atributo-->
+            <p>Mi gato es <strong> muy</strong> gruñon.</p>  <!--Anidación: Elemento dentro de otro elemento-->
+            <img src="image\gato01.jpeg" alt="Imagen de un Gato" /> <!--Elemento Vacio-->
+            
+            <!--Lista desordenada: son aquellas en las que el orden de los items no es relevante, 
+            como en una lista de compras. Estas son encerradas en un elemento-->
+            <ul> 
+                <li>Bengalí</li> <!--Cada elemento de la lista se coloca dentro de un elemento <li> (list item).-->
+                <li>Persa</li>
+                <li>Azul Ruso</li>
+            </ul>
+
+        <!--Los vínculos o enlaces son muy importantes —son los que hacen de la web, la web—. Para implementar
+        un vínculo, necesitas usar un vínculo simple — <a> — la a es la abreviatura de la palabra inglesa 
+        «anchor» («ancla»). Para convertir algún texto dentro de un párrafo en un vínculo-->
+        <a href="https://www.purina.es/encuentra-mascota/razas-de-gato">INFORMACIÓN COMPLETA</a>
+
+        <p>Para ello se recomieda leer 
+            <a href="https://www.purina.es/encuentra-mascota/razas-de-gato">INFORMACIÓN COMPLETA</a> 
+            y continuar en esta pagina
+        </p>
+    </body>
+    </html>
